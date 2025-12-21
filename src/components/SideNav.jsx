@@ -4,7 +4,7 @@ import "../css/SideNav.css";
 
 
 const SideNav = ({ isOpen, toggleNav }) => {
-    const links = ["topic 1", "topic 2", "topic 3"]; // easier to map
+    const links = ["topic 1", "topic 2", "topic 3"];
 
     return (
         <aside className={`sidenav ${isOpen ? "open" : "closed"}`}>

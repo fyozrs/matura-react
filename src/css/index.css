@@ -6,8 +6,8 @@
   color-scheme: light dark;
 
   --text: hsla(0, 0%, 100%, 90%);
-  --primary: hsl(265, 100%, 82%);
-  --secondary: hsla(265, 12%, 37%, 0.5);
+  --primary: hsl(265, 100%, 90%);
+  --secondary: hsla(265, 20%, 50%, 50%);
   --transition: all 0.3s ease-in-out;
   --background: hsl(0, 0%, 6%);
   --background-gradient: linear-gradient(135deg, hsl(0, 0%, 10%), hsl(265, 25%, 25%));

@@ -1,12 +1,14 @@
+import { Routes, Route } from "react-router-dom";
+import React, { useState } from "react";
+
+import Home from "./pages/Home";
+import NavBar from "./components/NavBar";
+import SideNav from "./components/SideNav";
+import Favorites from "./pages/Favorites";
+import TopicCard from "./components/TopicCard";
+
 import "./css/App.css"
 import "./css/TopicCard.css"
-import { Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import Favorites from "./pages/Favorites";
-import NavBar from "./components/NavBar";
-import React, { useState } from "react";
-import SideNav from "./components/SideNav";
-import TopicCard from "./components/TopicCard";
 
 
 function App() {

@@ -11,7 +11,7 @@
   padding-top: 20px;
   overflow: hidden;
 
-  box-shadow: 2px 0 5px hsl(0, 0, 5);
+  box-shadow: 5px 5px 4px hsla(0, 0%, 0%, 0.2);
   z-index: 1000;
 
   transition: width 0.3s ease-in-out;
@@ -91,7 +91,7 @@
   height: 1.5px;
   width: 14px;
   background-color: var(--primary);
-  
+
   border-radius: 1px;
   transition: background-color 0.3s ease-in-out;
 }

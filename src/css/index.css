@@ -10,7 +10,7 @@
   --secondary: hsla(265, 12%, 37%, 0.5);
   --transition: all 0.3s ease-in-out;
   --background: hsl(0, 0%, 6%);
-  --background-gradient: linear-gradient(135deg, hsl(0, 0%, 10%), hsl(266, 25%, 25%));
+  --background-gradient: linear-gradient(135deg, hsl(0, 0%, 10%), hsl(265, 25%, 25%));
 }
 
 * {
@@ -106,7 +106,7 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(circle at top left, hsla(0, 0%, 10%, 0.2), transparent 90%);
+  /* background: radial-gradient(circle at top left, hsla(0, 0%, 10%, 0.2), transparent 90%); */
   pointer-events: none;
   z-index: 0;
 }

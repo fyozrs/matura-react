@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import { Routes, Route } from "react-router-dom";
+
 import NavBar from "./components/NavBar";
 import SideNav from "./components/SideNav";
 import Home from "./pages/Home";
 import Favorites from "./pages/Favorites";
+
 import "./css/App.css";
 import "./css/TopicCard.css";
 

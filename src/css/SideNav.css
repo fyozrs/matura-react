@@ -1,0 +1,98 @@
+.sidenav {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  height: calc(100vh - 60px);
+  width: 200px;
+
+  background-color: var(--background-gradient);
+  color: white;
+
+  padding-top: 20px;
+  overflow: hidden;
+
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+
+  transition: width 0.3s ease-in-out;
+}
+
+.sidenav.closed {
+  width: 60px;
+}
+
+.sidenav ul {
+  list-style: none;
+  padding-top: 50px;
+  padding-left: 0;
+  margin: 0;
+}
+
+.sidenav li {
+  position: relative;
+  padding: 15px 20px;
+  padding-left: 1rem;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: transform 0.3s ease-in-out;
+}
+
+.sidenav li:hover {
+  transform: translateX(0.5rem);
+}
+
+.sidenav li::after {
+  content: "";
+  position: absolute;
+  width: 0.5rem;
+  height: 0.1rem;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background: var(--text);
+  transition: width 0.3s ease-in-out, left 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+.sidenav li:hover::after {
+  width: 1rem;
+  left: -0.5rem;
+  background: var(--primary);
+}
+
+.toggle-btn {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 18px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px;
+  border: none;
+  cursor: pointer;
+  z-index: 101;
+  background: none;
+  transition: transform 0.3s ease-in-out;
+}
+
+.toggle-btn:focus {
+  outline: none;
+}
+
+.toggle-btn:hover {
+  transform: scale(1.05);
+}
+
+.toggle-btn .bar {
+  height: 1.5px;
+  width: 14px;
+  background-color: white;
+  border-radius: 1px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.toggle-btn:hover .bar {
+  background-color: #d2d2d2;
+}

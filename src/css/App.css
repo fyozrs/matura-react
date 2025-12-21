@@ -1,0 +1,6 @@
+.main-content {
+  padding: 20px;
+  transition: margin-left 0.3s;
+  min-height: calc(100vh - 60px);
+  background-color: var(--background);
+}

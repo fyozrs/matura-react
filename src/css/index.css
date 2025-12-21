@@ -5,12 +5,12 @@
 
   color-scheme: light dark;
 
-  --text: rgba(255, 255, 255, 0.87);
+  --text: hsla(0, 0%, 100%, 90%);
   --primary: hsl(265, 100%, 82%);
-  --secondary: rgba(255, 255, 255, 0.15);
+  --secondary: hsla(265, 12%, 37%, 0.5);
   --transition: all 0.3s ease-in-out;
-  --background: #101010;
-  --background-gradient: linear-gradient(135deg, #1e1e1e, hsl(266, 25%, 25%));
+  --background: hsl(0, 0%, 6%);
+  --background-gradient: linear-gradient(135deg, hsl(0, 0%, 10%), hsl(266, 25%, 25%));
 }
 
 * {
@@ -74,11 +74,8 @@ a {
 }
 
 a:hover {
-  color: #999999;
+  color: hsl(0, 0%, 70%);
 }
-
-
-
 
 input,
 textarea,
@@ -87,8 +84,8 @@ select {
   font-size: 1em;
   padding: 0.5em 0.75em;
   border-radius: 6px;
-  border: 1px solid #333;
-  background-color: #1f1f1f;
+  border: 1px solid hsl(0, 0%, 30%);
+  background-color: hsl(0, 0%, 10%);
   color: var(--text);
   transition: border-color 0.25s, box-shadow 0.25s;
 }
@@ -97,7 +94,7 @@ input:focus,
 textarea:focus,
 select:focus {
   border-color: var(--primary);
-  box-shadow: 0 0 0 2px rgba(255, 71, 87, 0.2);
+  box-shadow: 0 0 0 2px var(--secondary);
   outline: none;
 }
 
@@ -109,28 +106,19 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(circle at top left, rgba(255, 255, 255, 0.02), transparent 70%);
+  background: radial-gradient(circle at top left, hsla(0, 0%, 10%, 0.2), transparent 90%);
   pointer-events: none;
   z-index: 0;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-    --text: #213547;
-    --background: #ffffff;
-    --background-gradient: linear-gradient(135deg, #ffffff, #f5f5f5);
+    --text: hsl(265, 50%, 30%);
+    --background: hsl(0, 0%, 100%);
+    --background-gradient: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 0%, 90%));
   }
 
   a:hover {
-    color: #747bff;
-  }
-
-  button {
-    background: linear-gradient(145deg, #f5f5f5, #eaeaea);
-    color: #213547;
-  }
-
-  button:hover {
-    background: linear-gradient(145deg, #e0e0e0, #d5d5d5);
+    color: hsl(265, 50%, 10%);
   }
 }

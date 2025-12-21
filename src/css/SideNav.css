@@ -6,12 +6,12 @@
   width: 200px;
 
   background-color: var(--background-gradient);
-  color: white;
+  color: hsl(0, 0, 100);
 
   padding-top: 20px;
   overflow: hidden;
 
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 0 5px hsl(0, 0, 5);
   z-index: 1000;
 
   transition: width 0.3s ease-in-out;
@@ -72,6 +72,7 @@
   padding: 4px;
   border: none;
   cursor: pointer;
+
   z-index: 101;
   background: none;
   transition: transform 0.3s ease-in-out;
@@ -88,11 +89,12 @@
 .toggle-btn .bar {
   height: 1.5px;
   width: 14px;
-  background-color: white;
+  color: hsl(0, 0, 100);
+  background-color: hsl(0, 0, 100);
   border-radius: 1px;
   transition: background-color 0.3s ease-in-out;
 }
 
 .toggle-btn:hover .bar {
-  background-color: #d2d2d2;
+  background-color: hsl(0, 0, 60);
 }

@@ -9,7 +9,7 @@
   background-color: hsla(266, 100%, 82%, 20%);
   box-shadow: 5px 15px 20px hsla(0, 0%, 0%, 0. 0.7);
 
-  transition: transform 0.2s;
+  transition: transform 0.3s ease-in-out;
 }
 
 .topic-card:hover {
@@ -24,7 +24,7 @@
   bottom: 0;
   background: var(--secondary);
   opacity: 0;
-  transition: opacity 0.2s;
+  transition: opacity 0.3s ease-in-out;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
